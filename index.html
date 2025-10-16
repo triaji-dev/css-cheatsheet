@@ -1,625 +1,852 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Cheatsheet - Web Programming Hack</title>
-  <meta name="description" content="A comprehensive CSS cheatsheet covering essential CSS declarations for practical web development.">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="background-animation"></div>
-  
-  <!-- Header -->
-  <header class="top-header">
-    <div class="header-content">
-      <div class="logo">
-        <span class="logo-icon">{ }</span>
-        <span class="logo-text">CSS Cheatsheet</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Cheatsheet - Web Programming Hack</title>
+    <meta
+      name="description"
+      content="A comprehensive CSS cheatsheet covering essential CSS declarations for practical web development."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background-animation"></div>
+
+    <!-- Header -->
+    <header class="top-header">
+      <div class="header-content">
+        <div class="logo">
+          <span class="logo-icon">{ }</span>
+          <span class="logo-text">CSS Cheatsheet</span>
+        </div>
+        <button class="mobile-toggle" aria-label="Toggle sidebar">☰</button>
       </div>
-      <button class="mobile-toggle" aria-label="Toggle sidebar">☰</button>
-    </div>
-  </header>
+    </header>
 
-  <!-- Sidebar Navigation -->
-  <aside class="sidebar">
-    <div class="sidebar-header">
-      <h2>Navigation</h2>
-    </div>
-    <nav class="sidebar-nav">
-      <ul class="nav-menu">
-        <li><a href="#intro" class="nav-link active" data-section="intro">
-          <span class="nav-icon">📖</span>
-          <span class="nav-text">Introduction</span>
-        </a></li>
-        <li><a href="#color-bg" class="nav-link" data-section="color-bg">
-          <span class="nav-icon">🎨</span>
-          <span class="nav-text">Color & Background</span>
-        </a></li>
-        <li><a href="#text" class="nav-link" data-section="text">
-          <span class="nav-icon">📝</span>
-          <span class="nav-text">Text</span>
-        </a></li>
-        <li><a href="#box-model" class="nav-link" data-section="box-model">
-          <span class="nav-icon">📦</span>
-          <span class="nav-text">Box Model</span>
-        </a></li>
-        <li><a href="#positioning" class="nav-link" data-section="positioning">
-          <span class="nav-icon">📍</span>
-          <span class="nav-text">Positioning</span>
-        </a></li>
-        <li><a href="#display" class="nav-link" data-section="display">
-          <span class="nav-icon">👁️</span>
-          <span class="nav-text">Display & Visibility</span>
-        </a></li>
-        <li><a href="#flexbox" class="nav-link" data-section="flexbox">
-          <span class="nav-icon">⚡</span>
-          <span class="nav-text">Flexbox</span>
-        </a></li>
-        <li><a href="#grid" class="nav-link" data-section="grid">
-          <span class="nav-icon">⊞</span>
-          <span class="nav-text">Grid</span>
-        </a></li>
-        <li><a href="#variables" class="nav-link" data-section="variables">
-          <span class="nav-icon">🔧</span>
-          <span class="nav-text">CSS Variables</span>
-        </a></li>
-        <li><a href="#animations" class="nav-link" data-section="animations">
-          <span class="nav-icon">✨</span>
-          <span class="nav-text">Animations</span>
-        </a></li>
-        <li><a href="#responsive" class="nav-link" data-section="responsive">
-          <span class="nav-icon">📱</span>
-          <span class="nav-text">Responsive Design</span>
-        </a></li>
-        <li><a href="#other" class="nav-link" data-section="other">
-          <span class="nav-icon">⚙️</span>
-          <span class="nav-text">Other Properties</span>
-        </a></li>
-        <li><a href="#filters" class="nav-link" data-section="filters">
-          <span class="nav-icon">🎭</span>
-          <span class="nav-text">Filters</span>
-        </a></li>
-      </ul>
-    </nav>
-  </aside>
-
-  <!-- Main Content -->
-  <main class="main-content">
-    <section id="intro" class="content-section active">
-      <div class="intro-box">
-        <h2>CSS Declarations</h2>
-        <p>Ada banyak sekali deklarasi CSS yang tersedia untuk digunakan. Namun, tidak semuanya diperlukan dalam pekerjaan sehari-hari. Sebenarnya, kalian dapat membuat situs web yang menarik hanya dengan memahami sebagian dari CSS declarations tersebut.</p>
-        <p>Itulah kegunaan bootcamp <strong>Web Programming Hack</strong>, dimana kita akan mempersingkat waktu belajar kalian dengan membuang sebagian besar hal yang tidak terpakai.</p>
-        <p class="highlight">Berikut ini adalah CSS declarations yang akan benar-benar kalian pakai:</p>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Navigation</h2>
       </div>
-    </section>
+      <nav class="sidebar-nav">
+        <ul class="nav-menu">
+          <li>
+            <a href="#intro" class="nav-link active" data-section="intro">
+              <span class="nav-icon">📖</span>
+              <span class="nav-text">Introduction</span>
+            </a>
+          </li>
+          <li>
+            <a href="#color-bg" class="nav-link" data-section="color-bg">
+              <span class="nav-icon">🎨</span>
+              <span class="nav-text">Color & Background</span>
+            </a>
+          </li>
+          <li>
+            <a href="#text" class="nav-link" data-section="text">
+              <span class="nav-icon">📝</span>
+              <span class="nav-text">Text</span>
+            </a>
+          </li>
+          <li>
+            <a href="#box-model" class="nav-link" data-section="box-model">
+              <span class="nav-icon">📦</span>
+              <span class="nav-text">Box Model</span>
+            </a>
+          </li>
+          <li>
+            <a href="#positioning" class="nav-link" data-section="positioning">
+              <span class="nav-icon">📍</span>
+              <span class="nav-text">Positioning</span>
+            </a>
+          </li>
+          <li>
+            <a href="#display" class="nav-link" data-section="display">
+              <span class="nav-icon">👁️</span>
+              <span class="nav-text">Display & Visibility</span>
+            </a>
+          </li>
+          <li>
+            <a href="#flexbox" class="nav-link" data-section="flexbox">
+              <span class="nav-icon">⚡</span>
+              <span class="nav-text">Flexbox</span>
+            </a>
+          </li>
+          <li>
+            <a href="#grid" class="nav-link" data-section="grid">
+              <span class="nav-icon">⊞</span>
+              <span class="nav-text">Grid</span>
+            </a>
+          </li>
+          <li>
+            <a href="#variables" class="nav-link" data-section="variables">
+              <span class="nav-icon">🔧</span>
+              <span class="nav-text">CSS Variables</span>
+            </a>
+          </li>
+          <li>
+            <a href="#animations" class="nav-link" data-section="animations">
+              <span class="nav-icon">✨</span>
+              <span class="nav-text">Animations</span>
+            </a>
+          </li>
+          <li>
+            <a href="#responsive" class="nav-link" data-section="responsive">
+              <span class="nav-icon">📱</span>
+              <span class="nav-text">Responsive Design</span>
+            </a>
+          </li>
+          <li>
+            <a href="#other" class="nav-link" data-section="other">
+              <span class="nav-icon">⚙️</span>
+              <span class="nav-text">Other Properties</span>
+            </a>
+          </li>
+          <li>
+            <a href="#filters" class="nav-link" data-section="filters">
+              <span class="nav-icon">🎭</span>
+              <span class="nav-text">Filters</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
 
-    <section id="color-bg" class="content-section">
-      <h2>Color and Background</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>1. color</h3>
-          <pre><code>color: #000000; /* black */
+    <!-- Container for Main Content and Preview -->
+    <div class="content-wrapper">
+      <!-- Main Content -->
+      <main class="main-content">
+        <section id="intro" class="content-section active">
+          <div class="intro-box">
+            <h2>CSS Declarations</h2>
+            <p>
+              Ada banyak sekali deklarasi CSS yang tersedia untuk digunakan.
+              Namun, tidak semuanya diperlukan dalam pekerjaan sehari-hari.
+              Sebenarnya, kalian dapat membuat situs web yang menarik hanya
+              dengan memahami sebagian dari CSS declarations tersebut.
+            </p>
+            <p class="highlight">
+              Berikut ini adalah CSS declarations yang akan benar-benar
+              terpakai.
+            </p>
+          </div>
+        </section>
+
+        <section id="color-bg" class="content-section">
+          <h2>Color and Background</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>1. color</h3>
+              <pre><code>color: #000000; /* black */
 color: rgb(0, 0, 0); /* black */
 color: rgba(0, 0, 0, 1); /* black with full opacity */</code></pre>
-        </div>
-        <div class="card">
-          <h3>2. background-color</h3>
-          <pre><code>background-color: #ffffff; /* white */</code></pre>
-        </div>
-        <div class="card">
-          <h3>3. background-image</h3>
-          <pre><code>background-image: url('image.jpg');</code></pre>
-        </div>
-        <div class="card">
-          <h3>4. background-repeat</h3>
-          <pre><code>background-repeat: repeat; /* default */
+            </div>
+            <div class="card">
+              <h3>2. background-color</h3>
+              <pre><code>background-color: #ffffff; /* white */</code></pre>
+            </div>
+            <div class="card">
+              <h3>3. background-image</h3>
+              <pre><code>background-image: url('image.jpg');</code></pre>
+            </div>
+            <div class="card">
+              <h3>4. background-repeat</h3>
+              <pre><code>background-repeat: repeat; /* default */
 background-repeat: no-repeat;</code></pre>
-        </div>
-        <div class="card">
-          <h3>5. background-position</h3>
-          <pre><code>background-position: center;
+            </div>
+            <div class="card">
+              <h3>5. background-position</h3>
+              <pre><code>background-position: center;
 background-position: top right;</code></pre>
-        </div>
-        <div class="card">
-          <h3>6. background-size</h3>
-          <pre><code>background-size: cover;
+            </div>
+            <div class="card">
+              <h3>6. background-size</h3>
+              <pre><code>background-size: cover;
 background-size: contain;</code></pre>
-        </div>
-        <div class="card">
-          <h3>7. background-attachment</h3>
-          <pre><code>background-attachment: scroll; /* default */
+            </div>
+            <div class="card">
+              <h3>7. background-attachment</h3>
+              <pre><code>background-attachment: scroll; /* default */
 background-attachment: fixed;</code></pre>
-        </div>
-      </div>
-    </section>
+            </div>
+          </div>
+        </section>
 
-    <section id="text" class="content-section">
-      <h2>Text</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>1. font-family</h3>
-          <pre><code>font-family: 'Arial', sans-serif;</code></pre>
-        </div>
-        <div class="card">
-          <h3>2. font-size</h3>
-          <pre><code>font-size: 16px;
+        <section id="text" class="content-section">
+          <h2>Text</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>1. font-family</h3>
+              <pre><code>font-family: 'Arial', sans-serif;</code></pre>
+            </div>
+            <div class="card">
+              <h3>2. font-size</h3>
+              <pre><code>font-size: 16px;
 font-size: 1em;</code></pre>
-        </div>
-        <div class="card">
-          <h3>3. font-weight</h3>
-          <pre><code>font-weight: normal;
+            </div>
+            <div class="card">
+              <h3>3. font-weight</h3>
+              <pre><code>font-weight: normal;
 font-weight: bold;
 font-weight: 700;</code></pre>
-        </div>
-        <div class="card">
-          <h3>4. font-style</h3>
-          <pre><code>font-style: normal;
+            </div>
+            <div class="card">
+              <h3>4. font-style</h3>
+              <pre><code>font-style: normal;
 font-style: italic;</code></pre>
-        </div>
-        <div class="card">
-          <h3>5. line-height</h3>
-          <pre><code>line-height: 1.5;</code></pre>
-        </div>
-        <div class="card">
-          <h3>6. letter-spacing</h3>
-          <pre><code>letter-spacing: 2px;</code></pre>
-        </div>
-        <div class="card">
-          <h3>7. text-align</h3>
-          <pre><code>text-align: left;
+            </div>
+            <div class="card">
+              <h3>5. line-height</h3>
+              <pre><code>line-height: 1.5;</code></pre>
+            </div>
+            <div class="card">
+              <h3>6. letter-spacing</h3>
+              <pre><code>letter-spacing: 2px;</code></pre>
+            </div>
+            <div class="card">
+              <h3>7. text-align</h3>
+              <pre><code>text-align: left;
 text-align: center;
 text-align: right;</code></pre>
-        </div>
-        <div class="card">
-          <h3>8. text-decoration</h3>
-          <pre><code>text-decoration: none;
+            </div>
+            <div class="card">
+              <h3>8. text-decoration</h3>
+              <pre><code>text-decoration: none;
 text-decoration: underline;
 text-decoration: line-through;</code></pre>
-        </div>
-        <div class="card">
-          <h3>9. text-transform</h3>
-          <pre><code>text-transform: none;
+            </div>
+            <div class="card">
+              <h3>9. text-transform</h3>
+              <pre><code>text-transform: none;
 text-transform: capitalize;
 text-transform: uppercase;
 text-transform: lowercase;</code></pre>
-        </div>
-      </div>
-    </section>
+            </div>
+          </div>
+        </section>
 
-    <section id="box-model" class="content-section">
-      <h2>Box Model</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>1. width</h3>
-          <pre><code>width: 100px;
+        <section id="box-model" class="content-section">
+          <h2>Box Model</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>1. width</h3>
+              <pre><code>width: 100px;
 width: 50%;</code></pre>
-        </div>
-        <div class="card">
-          <h3>2. height</h3>
-          <pre><code>height: 100px;
+            </div>
+            <div class="card">
+              <h3>2. height</h3>
+              <pre><code>height: 100px;
 height: auto;</code></pre>
-        </div>
-        <div class="card">
-          <h3>3. padding</h3>
-          <pre><code>padding: 10px;
+            </div>
+            <div class="card">
+              <h3>3. padding</h3>
+              <pre><code>padding: 10px;
 padding-top: 10px;
 padding-right: 10px;
 padding-bottom: 10px;
 padding-left: 10px;</code></pre>
-        </div>
-        <div class="card">
-          <h3>4. margin</h3>
-          <pre><code>margin: 10px;
+            </div>
+            <div class="card">
+              <h3>4. margin</h3>
+              <pre><code>margin: 10px;
 margin-top: 10px;
 margin-right: 10px;
 margin-bottom: 10px;
 margin-left: 10px;</code></pre>
-        </div>
-        <div class="card">
-          <h3>5. border</h3>
-          <pre><code>border: 1px solid #000;
+            </div>
+            <div class="card">
+              <h3>5. border</h3>
+              <pre><code>border: 1px solid #000;
 border-top: 1px solid #000;
 border-right: 1px solid #000;
 border-bottom: 1px solid #000;
 border-left: 1px solid #000;</code></pre>
-        </div>
-        <div class="card">
-          <h3>6. border-radius</h3>
-          <pre><code>border-radius: 5px;</code></pre>
-        </div>
-        <div class="card">
-          <h3>7. box-shadow</h3>
-          <pre><code>box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);</code></pre>
-        </div>
-      </div>
-    </section>
+            </div>
+            <div class="card">
+              <h3>6. border-radius</h3>
+              <pre><code>border-radius: 5px;</code></pre>
+            </div>
+            <div class="card">
+              <h3>7. box-shadow</h3>
+              <pre><code>box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);</code></pre>
+            </div>
+          </div>
+        </section>
 
-    <section id="positioning" class="content-section">
-      <h2>Positioning</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>1. position</h3>
-          <pre><code>position: static; /* default */
+        <section id="positioning" class="content-section">
+          <h2>Positioning</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>1. position</h3>
+              <pre><code>position: static; /* default */
 position: relative;
 position: absolute;
 position: fixed;
 position: sticky;</code></pre>
-        </div>
-        <div class="card">
-          <h3>2. top, right, bottom, left</h3>
-          <pre><code>top: 10px;
+            </div>
+            <div class="card">
+              <h3>2. top, right, bottom, left</h3>
+              <pre><code>top: 10px;
 right: 10px;
 bottom: 10px;
 left: 10px;</code></pre>
-        </div>
-        <div class="card">
-          <h3>3. z-index</h3>
-          <pre><code>z-index: 10;</code></pre>
-        </div>
-        <div class="card">
-          <h3>4. float</h3>
-          <pre><code>float: left;
+            </div>
+            <div class="card">
+              <h3>3. z-index</h3>
+              <pre><code>z-index: 10;</code></pre>
+            </div>
+            <div class="card">
+              <h3>4. float</h3>
+              <pre><code>float: left;
 float: right;
 float: none;</code></pre>
-        </div>
-        <div class="card">
-          <h3>5. clear</h3>
-          <pre><code>clear: left;
+            </div>
+            <div class="card">
+              <h3>5. clear</h3>
+              <pre><code>clear: left;
 clear: right;
 clear: both;
 clear: none;</code></pre>
-        </div>
-      </div>
-    </section>
+            </div>
+          </div>
+        </section>
 
-    <section id="display" class="content-section">
-      <h2>Display and Visibility</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>1. display</h3>
-          <pre><code>display: none;
+        <section id="display" class="content-section">
+          <h2>Display and Visibility</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>1. display</h3>
+              <pre><code>display: none;
 display: block;
 display: inline;
 display: inline-block;
 display: flex;
 display: grid;</code></pre>
-        </div>
-        <div class="card">
-          <h3>2. visibility</h3>
-          <pre><code>visibility: visible;
+            </div>
+            <div class="card">
+              <h3>2. visibility</h3>
+              <pre><code>visibility: visible;
 visibility: hidden;</code></pre>
-        </div>
-        <div class="card">
-          <h3>3. overflow</h3>
-          <pre><code>overflow: visible; /* default */
+            </div>
+            <div class="card">
+              <h3>3. overflow</h3>
+              <pre><code>overflow: visible; /* default */
 overflow: hidden;
 overflow: scroll;
 overflow: auto;</code></pre>
-        </div>
-        <div class="card">
-          <h3>4. opacity</h3>
-          <pre><code>opacity: 1; /* fully visible */
+            </div>
+            <div class="card">
+              <h3>4. opacity</h3>
+              <pre><code>opacity: 1; /* fully visible */
 opacity: 0.5; /* 50% visible */
 opacity: 0; /* fully transparent */</code></pre>
-        </div>
-      </div>
-    </section>
+            </div>
+          </div>
+        </section>
 
-    <section id="flexbox" class="content-section">
-      <h2>Flexbox</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>1. display</h3>
-          <pre><code>display: flex;</code></pre>
-        </div>
-        <div class="card">
-          <h3>2. flex-direction</h3>
-          <pre><code>flex-direction: row; /* default */
+        <section id="flexbox" class="content-section">
+          <h2>Flexbox</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>1. display</h3>
+              <pre><code>display: flex;</code></pre>
+            </div>
+            <div class="card">
+              <h3>2. flex-direction</h3>
+              <pre><code>flex-direction: row; /* default */
 flex-direction: row-reverse;
 flex-direction: column;
 flex-direction: column-reverse;</code></pre>
-        </div>
-        <div class="card">
-          <h3>3. justify-content</h3>
-          <pre><code>justify-content: flex-start; /* default */
+            </div>
+            <div class="card">
+              <h3>3. justify-content</h3>
+              <pre><code>justify-content: flex-start; /* default */
 justify-content: flex-end;
 justify-content: center;
 justify-content: space-between;
 justify-content: space-around;
 justify-content: space-evenly;</code></pre>
-        </div>
-        <div class="card">
-          <h3>4. align-items</h3>
-          <pre><code>align-items: stretch; /* default */
+            </div>
+            <div class="card">
+              <h3>4. align-items</h3>
+              <pre><code>align-items: stretch; /* default */
 align-items: flex-start;
 align-items: flex-end;
 align-items: center;
 align-items: baseline;</code></pre>
-        </div>
-        <div class="card">
-          <h3>5. flex-wrap</h3>
-          <pre><code>flex-wrap: nowrap; /* default */
+            </div>
+            <div class="card">
+              <h3>5. flex-wrap</h3>
+              <pre><code>flex-wrap: nowrap; /* default */
 flex-wrap: wrap;
 flex-wrap: wrap-reverse;</code></pre>
-        </div>
-        <div class="card">
-          <h3>6. align-content</h3>
-          <pre><code>align-content: stretch; /* default */
+            </div>
+            <div class="card">
+              <h3>6. align-content</h3>
+              <pre><code>align-content: stretch; /* default */
 align-content: flex-start;
 align-content: flex-end;
 align-content: center;
 align-content: space-between;
 align-content: space-around;</code></pre>
-        </div>
-        <div class="card">
-          <h3>7. flex-grow</h3>
-          <pre><code>flex-grow: 0; /* default */
+            </div>
+            <div class="card">
+              <h3>7. flex-grow</h3>
+              <pre><code>flex-grow: 0; /* default */
 flex-grow: 1;</code></pre>
-        </div>
-        <div class="card">
-          <h3>8. flex-shrink</h3>
-          <pre><code>flex-shrink: 1; /* default */
+            </div>
+            <div class="card">
+              <h3>8. flex-shrink</h3>
+              <pre><code>flex-shrink: 1; /* default */
 flex-shrink: 0;</code></pre>
-        </div>
-        <div class="card">
-          <h3>9. flex-basis</h3>
-          <pre><code>flex-basis: auto; /* default */
+            </div>
+            <div class="card">
+              <h3>9. flex-basis</h3>
+              <pre><code>flex-basis: auto; /* default */
 flex-basis: 100px;
 flex-basis: 0%;</code></pre>
-        </div>
-        <div class="card">
-          <h3>10. flex</h3>
-          <pre><code>flex: 1;
+            </div>
+            <div class="card">
+              <h3>10. flex</h3>
+              <pre><code>flex: 1;
 /*
 shorthand for:
 flex-grow: 1;
 flex-shrink: 1;
 flex-basis: 0%;
 */</code></pre>
-        </div>
-        <div class="card">
-          <h3>11. order</h3>
-          <pre><code>order: 0; /* default */
+            </div>
+            <div class="card">
+              <h3>11. order</h3>
+              <pre><code>order: 0; /* default */
 order: 1;</code></pre>
-        </div>
-      </div>
-    </section>
+            </div>
+          </div>
+        </section>
 
-    <section id="grid" class="content-section">
-      <h2>Grid</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>1. display</h3>
-          <pre><code>display: grid;</code></pre>
-        </div>
-        <div class="card">
-          <h3>2. grid-template-columns</h3>
-          <pre><code>grid-template-columns: 1fr 1fr;
+        <section id="grid" class="content-section">
+          <h2>Grid</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>1. display</h3>
+              <pre><code>display: grid;</code></pre>
+            </div>
+            <div class="card">
+              <h3>2. grid-template-columns</h3>
+              <pre><code>grid-template-columns: 1fr 1fr;
 grid-template-columns: 100px auto 100px;</code></pre>
-        </div>
-        <div class="card">
-          <h3>3. grid-template-rows</h3>
-          <pre><code>grid-template-rows: 1fr 2fr;
+            </div>
+            <div class="card">
+              <h3>3. grid-template-rows</h3>
+              <pre><code>grid-template-rows: 1fr 2fr;
 grid-template-rows: 100px auto 100px;</code></pre>
-        </div>
-        <div class="card">
-          <h3>4. grid-column-gap</h3>
-          <pre><code>grid-column-gap: 10px;</code></pre>
-        </div>
-        <div class="card">
-          <h3>5. grid-row-gap</h3>
-          <pre><code>grid-row-gap: 10px;</code></pre>
-        </div>
-        <div class="card">
-          <h3>6. grid-gap</h3>
-          <pre><code>grid-gap: 10px;</code></pre>
-        </div>
-        <div class="card">
-          <h3>7. grid-column</h3>
-          <pre><code>grid-column: 1 / 3;</code></pre>
-        </div>
-        <div class="card">
-          <h3>8. grid-row</h3>
-          <pre><code>grid-row: 1 / 2;</code></pre>
-        </div>
-      </div>
-    </section>
+            </div>
+            <div class="card">
+              <h3>4. grid-column-gap</h3>
+              <pre><code>grid-column-gap: 10px;</code></pre>
+            </div>
+            <div class="card">
+              <h3>5. grid-row-gap</h3>
+              <pre><code>grid-row-gap: 10px;</code></pre>
+            </div>
+            <div class="card">
+              <h3>6. grid-gap</h3>
+              <pre><code>grid-gap: 10px;</code></pre>
+            </div>
+            <div class="card">
+              <h3>7. grid-column</h3>
+              <pre><code>grid-column: 1 / 3;</code></pre>
+            </div>
+            <div class="card">
+              <h3>8. grid-row</h3>
+              <pre><code>grid-row: 1 / 2;</code></pre>
+            </div>
+          </div>
+        </section>
 
-    <section id="variables" class="content-section">
-      <h2>CSS Variables</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>1. Defining Variables</h3>
-          <pre><code>:root {
+        <section id="variables" class="content-section">
+          <h2>CSS Variables</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>1. Defining Variables</h3>
+              <pre><code>:root {
   --main-color: #06c;
   --padding: 10px;
 }</code></pre>
-        </div>
-        <div class="card">
-          <h3>2. Using Variables</h3>
-          <pre><code>element {
+            </div>
+            <div class="card">
+              <h3>2. Using Variables</h3>
+              <pre><code>element {
   color: var(--main-color);
   padding: var(--padding);
 }</code></pre>
-        </div>
-      </div>
-    </section>
+            </div>
+          </div>
+        </section>
 
-    <section id="animations" class="content-section">
-      <h2>Transitions and Animations</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>1. transition</h3>
-          <pre><code>transition: all 0.3s ease;</code></pre>
-        </div>
-        <div class="card">
-          <h3>2. animation</h3>
-          <pre><code>animation: mymove 5s infinite;</code></pre>
-        </div>
-        <div class="card">
-          <h3>3. @keyframes</h3>
-          <pre><code>@keyframes mymove {
+        <section id="animations" class="content-section">
+          <h2>Transitions and Animations</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>1. transition</h3>
+              <pre><code>transition: all 0.3s ease;</code></pre>
+            </div>
+            <div class="card">
+              <h3>2. animation</h3>
+              <pre><code>animation: mymove 5s infinite;</code></pre>
+            </div>
+            <div class="card">
+              <h3>3. @keyframes</h3>
+              <pre><code>@keyframes mymove {
   from {top: 0px;}
   to {top: 200px;}
 }</code></pre>
-        </div>
-      </div>
-    </section>
+            </div>
+          </div>
+        </section>
 
-    <section id="responsive" class="content-section">
-      <h2>Responsive Design</h2>
-      <div class="card">
-        <h3>Media Queries</h3>
-        <pre><code>@media screen and (min-width: 768px) {
+        <section id="responsive" class="content-section">
+          <h2>Responsive Design</h2>
+          <div class="card">
+            <h3>Media Queries</h3>
+            <pre><code>@media screen and (min-width: 768px) {
   body {
     background-color: lightblue;
   }
 }</code></pre>
-      </div>
-    </section>
+          </div>
+        </section>
 
-    <section id="other" class="content-section">
-      <h2>Other Useful Properties</h2>
-      <div class="grid-2">
-        <div class="card">
-          <h3>1. cursor</h3>
-          <pre><code>cursor: pointer;
+        <section id="other" class="content-section">
+          <h2>Other Useful Properties</h2>
+          <div class="grid-2">
+            <div class="card">
+              <h3>1. cursor</h3>
+              <pre><code>cursor: pointer;
 cursor: default;
 cursor: move;</code></pre>
-        </div>
-        <div class="card">
-          <h3>2. visibility</h3>
-          <pre><code>visibility: visible;
+            </div>
+            <div class="card">
+              <h3>2. visibility</h3>
+              <pre><code>visibility: visible;
 visibility: hidden;</code></pre>
-        </div>
-        <div class="card">
-          <h3>3. white-space</h3>
-          <pre><code>white-space: normal; /* default */
+            </div>
+            <div class="card">
+              <h3>3. white-space</h3>
+              <pre><code>white-space: normal; /* default */
 white-space: nowrap;
 white-space: pre;</code></pre>
-        </div>
-        <div class="card">
-          <h3>4. overflow-x</h3>
-          <pre><code>overflow-x: hidden;
+            </div>
+            <div class="card">
+              <h3>4. overflow-x</h3>
+              <pre><code>overflow-x: hidden;
 overflow-x: scroll;</code></pre>
-        </div>
-        <div class="card">
-          <h3>5. overflow-y</h3>
-          <pre><code>overflow-y: hidden;
+            </div>
+            <div class="card">
+              <h3>5. overflow-y</h3>
+              <pre><code>overflow-y: hidden;
 overflow-y: scroll;</code></pre>
-        </div>
-      </div>
-    </section>
+            </div>
+          </div>
+        </section>
 
-    <section id="filters" class="content-section">
-      <h2>Filters</h2>
-      <div class="card">
-        <h3>filter</h3>
-        <pre><code>filter: none; /* default */
+        <section id="filters" class="content-section">
+          <h2>Filters</h2>
+          <div class="card">
+            <h3>filter</h3>
+            <pre><code>filter: none; /* default */
 filter: blur(5px);
 filter: brightness(0.5);
 filter: contrast(200%);
 filter: grayscale(100%);</code></pre>
-      </div>
-    </section>
-  </main>
+          </div>
+        </section>
+      </main>
 
-  <script>
-    // Section switching functionality
-    const navLinks = document.querySelectorAll('.nav-link');
-    const sections = document.querySelectorAll('.content-section');
-    const sidebar = document.querySelector('.sidebar');
-    const mobileToggle = document.querySelector('.mobile-toggle');
+      <!-- Preview Section -->
+      <aside class="preview-section">
+        <div class="preview-header">
+          <h3>Live Preview</h3>
+          <p class="preview-subtitle">Click a card to see it in action</p>
+        </div>
+        <div class="preview-content">
+          <div class="preview-box" id="previewBox">
+            <div class="preview-placeholder">
+              <span class="preview-icon">👆</span>
+              <p>Select a CSS property card to see the live preview</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
 
-    // Function to switch sections
-    function switchSection(sectionId) {
-      // Hide all sections
-      sections.forEach(section => {
-        section.classList.remove('active');
-      });
+    <script>
+      // Section switching functionality
+      const navLinks = document.querySelectorAll('.nav-link');
+      const sections = document.querySelectorAll('.content-section');
+      const sidebar = document.querySelector('.sidebar');
+      const mobileToggle = document.querySelector('.mobile-toggle');
 
-      // Remove active class from all nav links
+      // Function to switch sections
+      function switchSection(sectionId) {
+        // Hide all sections
+        sections.forEach(section => {
+          section.classList.remove('active');
+        });
+
+        // Remove active class from all nav links
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+        });
+
+        // Show selected section
+        const targetSection = document.getElementById(sectionId);
+        if (targetSection) {
+          targetSection.classList.add('active');
+        }
+
+        // Add active class to clicked nav link
+        const activeLink = document.querySelector(
+          `[data-section="${sectionId}"]`
+        );
+        if (activeLink) {
+          activeLink.classList.add('active');
+        }
+
+        // Scroll to top of content
+        const mainContent = document.querySelector('.main-content');
+        if (mainContent) {
+          mainContent.scrollTop = 0;
+        }
+      }
+
+      // Add click event to nav links
       navLinks.forEach(link => {
-        link.classList.remove('active');
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const sectionId = link.getAttribute('data-section');
+          switchSection(sectionId);
+
+          // Close mobile sidebar
+          if (window.innerWidth <= 768) {
+            sidebar.classList.remove('active');
+            mobileToggle.classList.remove('active');
+          }
+        });
       });
 
-      // Show selected section
-      const targetSection = document.getElementById(sectionId);
-      if (targetSection) {
-        targetSection.classList.add('active');
-      }
+      // Mobile toggle
+      mobileToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        mobileToggle.classList.toggle('active');
+      });
 
-      // Add active class to clicked nav link
-      const activeLink = document.querySelector(`[data-section="${sectionId}"]`);
-      if (activeLink) {
-        activeLink.classList.add('active');
-      }
-
-      // Scroll to top of content
-      const mainContent = document.querySelector('.main-content');
-      if (mainContent) {
-        mainContent.scrollTop = 0;
-      }
-    }
-
-    // Add click event to nav links
-    navLinks.forEach(link => {
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-        const sectionId = link.getAttribute('data-section');
-        switchSection(sectionId);
-
-        // Close mobile sidebar
+      // Close sidebar when clicking outside on mobile
+      document.addEventListener('click', e => {
         if (window.innerWidth <= 768) {
-          sidebar.classList.remove('active');
-          mobileToggle.classList.remove('active');
+          if (!sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
+            sidebar.classList.remove('active');
+            mobileToggle.classList.remove('active');
+          }
         }
       });
-    });
 
-    // Mobile toggle
-    mobileToggle.addEventListener('click', () => {
-      sidebar.classList.toggle('active');
-      mobileToggle.classList.toggle('active');
-    });
+      // Preview functionality
+      const previewBox = document.getElementById('previewBox');
 
-    // Close sidebar when clicking outside on mobile
-    document.addEventListener('click', (e) => {
-      if (window.innerWidth <= 768) {
-        if (!sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
-          sidebar.classList.remove('active');
-          mobileToggle.classList.remove('active');
+      // Card click for preview
+      document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', function () {
+          const property = this.querySelector('h3').textContent;
+          const codeContent = this.querySelector('code').textContent;
+
+          // Remove active class from all cards
+          document
+            .querySelectorAll('.card')
+            .forEach(c => c.classList.remove('card-active'));
+
+          // Add active class to clicked card
+          this.classList.add('card-active');
+
+          // Update preview
+          updatePreview(property, codeContent);
+        });
+      });
+
+      function updatePreview(property, cssCode) {
+        // Clear preview box
+        previewBox.innerHTML = '';
+
+        // Create preview based on property type
+        const propertyName = property.toLowerCase();
+
+        if (
+          propertyName.includes('color') &&
+          !propertyName.includes('background')
+        ) {
+          // Color preview
+          const colors =
+            cssCode.match(/#[0-9a-fA-F]{6}|rgb\([^)]+\)|rgba\([^)]+\)/g) || [];
+          previewBox.innerHTML = `
+          <div class="preview-demo">
+            <h4>${property}</h4>
+            ${colors
+              .map(
+                color => `
+              <div class="color-demo" style="color: ${color};">
+                The quick brown fox jumps over the lazy dog
+                <span class="color-value">${color}</span>
+              </div>
+            `
+              )
+              .join('')}
+          </div>
+        `;
+        } else if (propertyName.includes('background-color')) {
+          const colors = cssCode.match(
+            /#[0-9a-fA-F]{6}|rgb\([^)]+\)|rgba\([^)]+\)/g
+          ) || ['#ffffff'];
+          previewBox.innerHTML = `
+          <div class="preview-demo">
+            <h4>${property}</h4>
+            ${colors
+              .map(
+                color => `
+              <div class="bg-color-demo" style="background-color: ${color};">
+                <span class="color-label">${color}</span>
+              </div>
+            `
+              )
+              .join('')}
+          </div>
+        `;
+        } else if (
+          propertyName.includes('background-size') ||
+          propertyName.includes('background-position')
+        ) {
+          previewBox.innerHTML = `
+          <div class="preview-demo">
+            <h4>${property}</h4>
+            <div class="bg-demo" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%232563eb%22/></svg>'); background-repeat: no-repeat; ${
+              cssCode.split('\n')[0]
+            }">
+              Background Demo
+            </div>
+          </div>
+        `;
+        } else if (propertyName.includes('font-size')) {
+          const sizes = cssCode.match(/\d+px|\d+em/g) || ['16px'];
+          previewBox.innerHTML = `
+          <div class="preview-demo">
+            <h4>${property}</h4>
+            ${sizes
+              .map(
+                size => `
+              <div class="text-demo" style="font-size: ${size};">
+                Text at ${size}
+              </div>
+            `
+              )
+              .join('')}
+          </div>
+        `;
+        } else if (propertyName.includes('font-weight')) {
+          const weights = cssCode.match(/\d{3}|normal|bold/g) || [];
+          previewBox.innerHTML = `
+          <div class="preview-demo">
+            <h4>${property}</h4>
+            ${weights
+              .map(
+                weight => `
+              <div class="text-demo" style="font-weight: ${weight};">
+                Font weight: ${weight}
+              </div>
+            `
+              )
+              .join('')}
+          </div>
+        `;
+        } else if (propertyName.includes('text-align')) {
+          previewBox.innerHTML = `
+          <div class="preview-demo">
+            <h4>${property}</h4>
+            <div class="text-demo" style="text-align: left;">Left aligned text</div>
+            <div class="text-demo" style="text-align: center;">Center aligned text</div>
+            <div class="text-demo" style="text-align: right;">Right aligned text</div>
+          </div>
+        `;
+        } else if (propertyName.includes('border-radius')) {
+          previewBox.innerHTML = `
+          <div class="preview-demo">
+            <h4>${property}</h4>
+            <div class="shape-demo" style="border-radius: 0;">0px</div>
+            <div class="shape-demo" style="border-radius: 5px;">5px</div>
+            <div class="shape-demo" style="border-radius: 15px;">15px</div>
+            <div class="shape-demo" style="border-radius: 50%;">50%</div>
+          </div>
+        `;
+        } else if (propertyName.includes('box-shadow')) {
+          previewBox.innerHTML = `
+          <div class="preview-demo">
+            <h4>${property}</h4>
+            <div class="shape-demo" style="box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">Small shadow</div>
+            <div class="shape-demo" style="box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);">Medium shadow</div>
+            <div class="shape-demo" style="box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);">Large shadow</div>
+          </div>
+        `;
+        } else if (propertyName.includes('opacity')) {
+          previewBox.innerHTML = `
+          <div class="preview-demo">
+            <h4>${property}</h4>
+            <div class="shape-demo" style="opacity: 1;">100%</div>
+            <div class="shape-demo" style="opacity: 0.7;">70%</div>
+            <div class="shape-demo" style="opacity: 0.4;">40%</div>
+            <div class="shape-demo" style="opacity: 0.1;">10%</div>
+          </div>
+        `;
+        } else if (
+          propertyName.includes('flex') ||
+          propertyName.includes('justify') ||
+          propertyName.includes('align-items')
+        ) {
+          previewBox.innerHTML = `
+          <div class="preview-demo">
+            <h4>${property}</h4>
+            <div class="flex-demo">
+              <div class="flex-item">1</div>
+              <div class="flex-item">2</div>
+              <div class="flex-item">3</div>
+            </div>
+          </div>
+        `;
+        } else {
+          // Generic preview
+          previewBox.innerHTML = `
+          <div class="preview-demo">
+            <h4>${property}</h4>
+            <div class="generic-demo">
+              <pre><code>${cssCode}</code></pre>
+            </div>
+          </div>
+        `;
         }
       }
-    });
 
-    // Card hover effects with pointer events
-    document.querySelectorAll('.card').forEach(card => {
-      card.addEventListener('mouseenter', function() {
-        this.style.transform = 'translateY(-8px) scale(1.02)';
+      // Handle keyboard navigation
+      navLinks.forEach((link, index) => {
+        link.addEventListener('keydown', e => {
+          if (e.key === 'ArrowDown') {
+            e.preventDefault();
+            const nextLink = navLinks[index + 1];
+            if (nextLink) nextLink.focus();
+          } else if (e.key === 'ArrowUp') {
+            e.preventDefault();
+            const prevLink = navLinks[index - 1];
+            if (prevLink) prevLink.focus();
+          }
+        });
       });
-      
-      card.addEventListener('mouseleave', function() {
-        this.style.transform = 'translateY(0) scale(1)';
-      });
-    });
-
-    // Handle keyboard navigation
-    navLinks.forEach((link, index) => {
-      link.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowDown') {
-          e.preventDefault();
-          const nextLink = navLinks[index + 1];
-          if (nextLink) nextLink.focus();
-        } else if (e.key === 'ArrowUp') {
-          e.preventDefault();
-          const prevLink = navLinks[index - 1];
-          if (prevLink) prevLink.focus();
-        }
-      });
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
